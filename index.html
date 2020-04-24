@@ -23,10 +23,10 @@
 		</script>
 	</head>
 	<body>
-		<img data-src="img/l1.png" style="position:absolute; max-width: 70px; " alt="">
+		<img src="/img/l1.png" style="position:absolute; max-width: 70px; " alt="">
 		<div class="reveal">
 			<div class="slides">
-			<img data-src="/img/p1.jpg" style=" margin-top: 0px;  margin-bottom: 300px; border: none;" width="508px; position: absolute; " alt="">
+			<section><img src="/img/p1.jpg" style=" margin-top: 0px;  margin-bottom: 300px; border: none;" width="508px; position: absolute; " alt=""></section>
 			<section><img src="/img/p13.jpg" style="border: none;" width="508px; position: absolute;  " alt=""></section>
 			</div>
 		</div>
@@ -43,8 +43,6 @@
 				height: 700,
 				minScale: 0.77,
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/highlight/highlight.js' },
