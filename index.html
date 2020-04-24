@@ -23,11 +23,11 @@
 		</script>
 	</head>
 	<body>
-		<img src="/img/l1.png" style="position:absolute; max-width: 70px; " alt="">
+		<img data-src="img/l1.png" style="position:absolute; max-width: 70px; " alt="">
 		<div class="reveal">
 			<div class="slides">
-			<section><img src="/img/p1.jpg" style=" margin-top: 0px;  margin-bottom: 300px; border: none;" width="508px; position: absolute; " alt=""></section>
-			<section><img src="/img/p13.jpg" style="border: none;" width="508px; position: absolute;  " alt=""></section>
+			<section><img data-src="img/p1.jpg" style=" margin-top: 0px;  margin-bottom: 300px; border: none;" width="508px; position: absolute; " alt=""></section>
+			<section><img data-src="img/p13.jpg" style="border: none;" width="508px; position: absolute;  " alt=""></section>
 			</div>
 		</div>
 
@@ -43,6 +43,8 @@
 				height: 700,
 				minScale: 0.77,
 				dependencies: [
+					{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js', async: true },
+					{ src: 'plugin/multiplex/client.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/highlight/highlight.js' },
